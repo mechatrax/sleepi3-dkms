@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# postrm script for sleepi3-dkms
+#
+# see: dh_installdeb(1)
+
+set -e
+
+case "$1" in
+    purge|remove|abort-install|disappear)
+        update-initramfs -u -k all
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
+

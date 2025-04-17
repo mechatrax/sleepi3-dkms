@@ -1,0 +1,5 @@
+sleepi3-dkms (1.0.0) bookworm; urgency=medium
+
+  * Initial release.
+
+ -- Masahiro Honda <honda@mechatrax.com>  Fri, 18 Apr 2025 08:03:03 +0900
