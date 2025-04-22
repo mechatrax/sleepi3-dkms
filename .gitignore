@@ -5,3 +5,5 @@ debian/*.substvars
 
 debian/.debhelper/*
 debian/sleepi3-dkms/*
+debian/sleepi3-dkms.postinst
+debian/sleepi3-dkms.prerm

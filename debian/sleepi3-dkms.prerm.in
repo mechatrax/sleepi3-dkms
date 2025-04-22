@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# prerm script for sleepi3-dkms
+#
+# see: dh_installdeb(1)
+
+set -e
+
+DKMS_NAME=sleepi3
+DKMS_VERSION=#DKMS_VERSION#
+
+case "$1" in
+    remove|purge|upgrade|deconfigure)
+        if [ "$(dkms status $DKMS_NAME/$DKMS_VERSION)" ]; then
+            dkms remove $DKMS_NAME/$DKMS_VERSION --all > /dev/null
+        fi
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
+
