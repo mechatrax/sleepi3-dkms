@@ -14,7 +14,7 @@ case "$1" in
     configure)
         for KERNEL in $KERNELS; do
             echo "Building kernel module for $KERNEL"
-            if [ -e /lib/modules/$KERNEL/build ]; then
+            if [ -e /lib/modules/$KERNEL/build ] && dpkg --compare-versions "$KERNEL" ge "6.12"; then
                 dkms install $DKMS_NAME/$DKMS_VERSION -k $KERNEL > /dev/null
                 update-initramfs -u -k $KERNEL
                 echo "Done."

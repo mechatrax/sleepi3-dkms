@@ -12,7 +12,7 @@ Homepage: https://mechatrax.com
 Package: sleepi3-dkms
 Architecture: armhf arm64
 Conflicts: linux-headers-armmp, linux-headers-armmp-lpae, linux-headers-arm64, raspberrypi-kernel-headers, raspberrypi-kernel-headers-mtx
-Depends: ${misc:Depends}, dkms, xz-utils, linux-headers-rpi-dummy | linux-headers-rpi-v6 [armhf] | linux-headers-rpi-v7 [armhf] | linux-headers-rpi-v7l [armhf] | linux-headers-rpi-v8 [arm64] | linux-headers-rpi-2712 [arm64]
+Depends: ${misc:Depends}, dkms, xz-utils, linux-headers-rpi-dummy | linux-headers-rpi-v6 (>= 1:6.12) [armhf] | linux-headers-rpi-v7 (>= 1:6.12) [armhf] | linux-headers-rpi-v7l (>= 1:6.12) [armhf] | linux-headers-rpi-v8 (>= 1:6.12) [arm64] | linux-headers-rpi-2712 (>= 1:6.12) [arm64], mechatrax-dkms-sys-mods [armhf]
 Description: Linux kernel module to use slee-Pi 3 (DKMS)
  This package contains the source for rtc kernel module. The RTC
  kernel module for using slee-Pi 3 to be built with dkms.
