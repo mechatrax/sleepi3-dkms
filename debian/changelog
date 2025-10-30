@@ -1,3 +1,11 @@
+sleepi3-dkms (1.0.0.2) trixie; urgency=medium
+
+  * Update for trixie
+  * debian/control: Bump Standards-Version to 4.7.2
+  * debian/rules: Update environment variable reading
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Fri, 24 Oct 2025 14:08:23 +0900
+
 sleepi3-dkms (1.0.0.1) bookworm; urgency=medium
 
   * debian/control: Update dependencies

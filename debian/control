@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Yuta Kiyonaga <kiyonaga@mechatrax.com>
 Uploaders: Masahiro Honda <honda@mechatrax.com>
 Build-Depends: debhelper-compat (= 13)
-Standards-Version: 4.6.2
+Standards-Version: 4.7.2
 Vcs-Git: https://github.com/mechatrax/sleepi3-dkms.git
 Vcs-Browser: https://github.com/mechatrax/sleepi3-dkms
 Homepage: https://mechatrax.com
